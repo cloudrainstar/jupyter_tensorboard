@@ -38,6 +38,7 @@ try:
                         "--logdir", logdir,
                         "--reload_interval", str(reload_interval),
                         "--purge_orphaned_data", str(purge_orphaned_data),
+                        "--reload_multifile=true",
                    ]
             tensorboard = program.TensorBoard()
             tensorboard.configure(argv)
